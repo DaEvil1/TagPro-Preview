@@ -65,49 +65,53 @@ def background_gen(base, functions):
                 "gate red", "gate blue", "wall")
     rel_coords = [(i, j) for i in range(-1, 2) for j in range (-1, 2) if i != j !=-i]
     floor_back_rects = []
-    for i in range(len(base)):
-        for j in range(len(base[i])):
+    for i in range(1, len(base) - 1):
+        for j in range(1, len(base[i]) - 1):
             if base[i][j] not in excluded:
                 floor_bool = True
                 for coord in rel_coords:
-                    if i + coord[0] < len(base[i]) \
-                            and j + coord[1] < len(base[i][j]):
-                        if base[i + coord[0]][j + coord[1]] == "black":
-                            floor_bool = False
-                    if i + coord[0] == len(base[i]) \
-                            or j + coord[1] == len(base[i][j]):
-                                floor_bool = False
+                    if base[i + coord[0]][j + coord[1]] == "black":
+                        floor_bool = False
                 if floor_bool:
                     floor_back_rects.append((j*40, i*40, (j+1)*40, (i+1)*40))
     return floor_back_rects
 
-
-def gen_tile_obj(i, j, functions, base, files):
+def gen_tile_objs(functions, files):
+    tiles ={}
     for element in functions:
-        if base[i][j] in functions[element]:
+        for i in functions[element]:
             newtile = Object(files[element])
-            tile_x, tile_y = functions[element][base[i][j]]
+            tile_x, tile_y = functions[element][i]
             square = (tile_x, tile_y, 40, 40)
             newtile.Modify("chop", square)
-            newtile.data["rect"] = (j*40, i*40, (j+1)*40, (i+1)*40)
-            return newtile
+            tiles[i] = newtile
+    return tiles
+        
+def gen_rects(base):
+    rects = []
+    tiles_id = []
+    for i in range(len(base)):
+        for j in range(len(base[i])):
+            new_rect = (j*40, i*40, (j+1)*40, (i+1)*40)
+            rects.append(new_rect)
+            tiles_id.append(base[i][j])
+    return rects, tiles_id
+
 
 def draw_map(base, width, height, filename):
     files = get_paths()
     functions, floor = var_init(files)
     floor_back_rects = background_gen(base, functions)
     win, screen = win_init(width, height)
-    tiles = []
-    for i in range(len(base)):
-        for j in range(len(base[i])):
-            newtile = gen_tile_obj(i, j, functions, base, files)
-            tiles.append(newtile)
+    tiles = gen_tile_objs(functions, files)
+    rects, tiles_id = gen_rects(base)
     for element in floor_back_rects:
         floor_rect = element
         floor.data["rect"] = floor_rect
         floor.AlphaBlit(screen)
-    for i in range(len(tiles)):
-        tiles[i].AlphaBlit(screen)
+    for i in range(len(tiles_id)):
+        tiles[tiles_id[i]].data["rect"] = rects[i]
+        tiles[tiles_id[i]].AlphaBlit(screen)
         win.Update()
     win.Modify("save", filename)
     win.Quit()
