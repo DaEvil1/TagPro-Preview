@@ -12,9 +12,6 @@ import sys, os, traceback, string, json
 BackGr = (0, 0, 0)
 name = "DaEvil1 Preview Map"
 Transparent = (255, 255, 255)
-CoordsR = {0 : (0, 0, 70, 70)}
-ImHeight = CoordsR[0][2]
-ImWidth = CoordsR[0][3]
 
 image_source = sys.argv[1]
 json_source = sys.argv[2]
