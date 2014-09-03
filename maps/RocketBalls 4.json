@@ -1,0 +1,27 @@
+{"info":{"name":"RocketBalls 0.4","author":"DaEvil1"},"switches":{"13,8":{"toggle":[{"pos":{"x":14,"y":8}}]},"14,7":{"toggle":[{"pos":{"x":14,"y":8}}]},"14,9":{"toggle":[{"pos":{"x":14,"y":8}}]},"15,8":{"toggle":[{"pos":{"x":14,"y":8}}]},"27,3":{"toggle":[{"pos":{"x":26,"y":1}},{"pos":{"x":27,"y":1}},{"pos":{"x":28,"y":1}}]},"39,8":{"toggle":[{"pos":{"x":40,"y":8}}]},"40,7":{"toggle":[{"pos":{"x":40,"y":8}}]},"40,9":{"toggle":[{"pos":{"x":40,"y":8}}]},"41,8":{"toggle":[{"pos":{"x":40,"y":8}}]}},"fields":{},"portals":{},
+
+"spawnPoints": {
+"red":[
+{ "x": 14 , "y": 24, "radius": 0, "weight":48},
+{ "x": 15 , "y": 24, "radius": 0, "weight":48},
+{ "x": 16 , "y": 24, "radius": 0, "weight":48},
+{ "x": 15 , "y": 23, "radius": 0, "weight":48},
+{ "x": 16 , "y": 23, "radius": 0, "weight":48},
+{ "x": 17 , "y": 23, "radius": 0, "weight":48},
+{ "x": 16 , "y": 22, "radius": 0, "weight":48},
+{ "x": 17 , "y": 22, "radius": 0, "weight":48},
+{ "x": 18 , "y": 22, "radius": 0, "weight":48}
+],
+"blue":[
+{ "x": 40 , "y": 24, "radius": 0, "weight":48},
+{ "x": 39 , "y": 24, "radius": 0, "weight":48},
+{ "x": 38 , "y": 24, "radius": 0, "weight":48},
+{ "x": 39 , "y": 23, "radius": 0, "weight":48},
+{ "x": 38 , "y": 23, "radius": 0, "weight":48},
+{ "x": 37 , "y": 23, "radius": 0, "weight":48},
+{ "x": 38 , "y": 22, "radius": 0, "weight":48},
+{ "x": 37 , "y": 22, "radius": 0, "weight":48},
+{ "x": 36 , "y": 22, "radius": 0, "weight":48}
+]
+}
+}

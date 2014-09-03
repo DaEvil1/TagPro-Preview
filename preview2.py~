@@ -186,7 +186,7 @@ def translate_json(base):
             for element in data["spawnPoints"][color]:
                 x = element["x"]
                 y = element["y"]
-                base[y][x] = color + " spawn"
+                base[y][x] = "red " + color
     filename = name + " " + "by " + author + ".png"
     return base, filename
 
