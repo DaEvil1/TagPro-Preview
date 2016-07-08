@@ -1,0 +1,217 @@
+{
+    "info": {
+        "name": "Bulldog",
+        "author": "Snowball"
+    },
+    "switches": {
+        "19,24": {
+            "toggle": [
+                {
+                    "pos": {
+                        "x": 18,
+                        "y": 28
+                    }
+                }
+            ]
+        },
+        "20,15": {
+            "toggle": [
+                {
+                    "pos": {
+                        "x": 16,
+                        "y": 13
+                    }
+                },
+                {
+                    "pos": {
+                        "x": 17,
+                        "y": 14
+                    }
+                }
+            ]
+        },
+        "25,19": {
+            "toggle": [
+                {
+                    "pos": {
+                        "x": 28,
+                        "y": 20
+                    }
+                }
+            ]
+        },
+        "31,19": {
+            "toggle": [
+                {
+                    "pos": {
+                        "x": 28,
+                        "y": 20
+                    }
+                }
+            ]
+        },
+        "36,15": {
+            "toggle": [
+                {
+                    "pos": {
+                        "x": 40,
+                        "y": 13
+                    }
+                },
+                {
+                    "pos": {
+                        "x": 39,
+                        "y": 14
+                    }
+                }
+            ]
+        },
+        "37,24": {
+            "toggle": [
+                {
+                    "pos": {
+                        "x": 38,
+                        "y": 28
+                    }
+                }
+            ]
+        }
+    },
+    "fields": {
+        "10,17": {
+            "defaultState": "blue"
+        },
+        "10,18": {
+            "defaultState": "blue"
+        },
+        "16,13": {
+            "defaultState": "red"
+        },
+        "17,14": {
+            "defaultState": "red"
+        },
+        "39,14": {
+            "defaultState": "blue"
+        },
+        "40,13": {
+            "defaultState": "blue"
+        },
+        "46,17": {
+            "defaultState": "red"
+        },
+        "46,18": {
+            "defaultState": "red"
+        }
+    },
+    "portals": {
+        "7,7": {
+            "destination": {
+                "x": 7,
+                "y": 30
+            },
+            "cooldown": 0
+        },
+        "9,17": {
+            "destination": {
+                "x": 49,
+                "y": 7
+            },
+            "cooldown": 0
+        },
+        "9,18": {
+            "destination": {
+                "x": 49,
+                "y": 7
+            },
+            "cooldown": 0
+        },
+        "47,17": {
+            "destination": {
+                "x": 7,
+                "y": 7
+            },
+            "cooldown": 0
+        },
+        "47,18": {
+            "destination": {
+                "x": 7,
+                "y": 7
+            },
+            "cooldown": 0
+        },
+        "49,7": {
+            "destination": {
+                "x": 49,
+                "y": 30
+            },
+            "cooldown": 0
+        }
+    },
+    "spawnPoints": {
+        "red": [
+            {
+                "x": 11,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            },
+            {
+                "x": 12,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            },
+            {
+                "x": 13,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            },
+            {
+                "x": 14,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            },
+            {
+                "x": 15,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            }
+        ],
+        "blue": [
+            {
+                "x": 41,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            },
+            {
+                "x": 42,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            },
+            {
+                "x": 43,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            },
+            {
+                "x": 44,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            },
+            {
+                "x": 45,
+                "y": 15,
+                "radius": 0,
+                "weight": 48
+            }
+        ]
+    }
+}
+

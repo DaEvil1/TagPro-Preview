@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "Precipice",
+    "author": "q42 & DaEvil1",
+    "gameMode": "normal"
+  },
+  "switches": {},
+  "fields": {},
+  "portals": {},
+  "marsballs": [],
+  "spawnPoints": {
+    "red": [],
+    "blue": []
+  }
+}

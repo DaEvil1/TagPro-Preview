@@ -1,0 +1,162 @@
+{
+  "info": {
+    "name": "Rolling on the Edge",
+    "author": "DaEvil1",
+    "gameMode": "normal"
+  },
+  "switches": {
+    "13,3": {
+      "toggle": [
+        {
+          "pos": {
+            "x": 16,
+            "y": 9
+          }
+        },
+        {
+          "pos": {
+            "x": 16,
+            "y": 10
+          }
+        },
+        {
+          "pos": {
+            "x": 17,
+            "y": 8
+          }
+        },
+        {
+          "pos": {
+            "x": 17,
+            "y": 9
+          }
+        },
+        {
+          "pos": {
+            "x": 18,
+            "y": 7
+          }
+        },
+        {
+          "pos": {
+            "x": 18,
+            "y": 8
+          }
+        },
+        {
+          "pos": {
+            "x": 19,
+            "y": 7
+          }
+        }
+      ],
+      "timer": 0
+    },
+    "35,3": {
+      "toggle": [
+        {
+          "pos": {
+            "x": 29,
+            "y": 7
+          }
+        },
+        {
+          "pos": {
+            "x": 30,
+            "y": 7
+          }
+        },
+        {
+          "pos": {
+            "x": 30,
+            "y": 8
+          }
+        },
+        {
+          "pos": {
+            "x": 31,
+            "y": 8
+          }
+        },
+        {
+          "pos": {
+            "x": 31,
+            "y": 9
+          }
+        },
+        {
+          "pos": {
+            "x": 32,
+            "y": 9
+          }
+        },
+        {
+          "pos": {
+            "x": 32,
+            "y": 10
+          }
+        }
+      ],
+      "timer": 0
+    }
+  },
+  "fields": {
+    "16,9": {
+      "defaultState": "off"
+    },
+    "16,10": {
+      "defaultState": "off"
+    },
+    "17,8": {
+      "defaultState": "off"
+    },
+    "17,9": {
+      "defaultState": "off"
+    },
+    "18,7": {
+      "defaultState": "off"
+    },
+    "18,8": {
+      "defaultState": "off"
+    },
+    "19,7": {
+      "defaultState": "off"
+    },
+    "29,7": {
+      "defaultState": "off"
+    },
+    "30,7": {
+      "defaultState": "off"
+    },
+    "30,8": {
+      "defaultState": "off"
+    },
+    "31,8": {
+      "defaultState": "off"
+    },
+    "31,9": {
+      "defaultState": "off"
+    },
+    "32,9": {
+      "defaultState": "off"
+    },
+    "32,10": {
+      "defaultState": "off"
+    }
+  },
+  "portals": {
+    "24,25": {
+      "destination": {
+        "x": 24,
+        "y": 29
+      },
+      "cooldown": 0
+    },
+    "24,29": {}
+  },
+  "marsballs": [],
+  "spawnPoints": {
+    "red": [],
+    "blue": []
+  }
+}
